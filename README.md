@@ -4,7 +4,7 @@ hello_f77
 <p align="center">
     <a href="https://github.com/ckormanyos/hello_f77/actions">
         <img src="https://github.com/ckormanyos/hello_f77/actions/workflows/hello_f77.yml/badge.svg" alt="Build Status"></a>
-    <a href="https://godbolt.org/z/dGxTGv8or" alt="godbolt">
+    <a href="https://godbolt.org/z/9j7efoTMG" alt="godbolt">
         <img src="https://img.shields.io/badge/try%20it%20on-godbolt-green" /></a>
 </p>
 
