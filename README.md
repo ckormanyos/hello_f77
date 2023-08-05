@@ -12,7 +12,9 @@ hello_f77 implements the epic _Hello_ _World_ program in `FORTRAN-77`.
 
 ## Compile on `*nix`
 
-Use GCC to compile [`hello_f77.f`](./hello_f77.f) (requires the presence of `fortran` and `libgfortran`).
+Use GCC to compile [`hello_f77.f`](./hello_f77.f). This requires the presence
+of `fortran` in the enabled languages of the GCC build and an installed `libgfortran`
+on the system.
 
 ```sh
 cd hello_f77
