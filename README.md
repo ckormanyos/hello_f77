@@ -11,7 +11,7 @@ hello_f77
 hello_f77 implements the epic _Hello_ _World_ program in the Fortran77 language.
 ## Build on `*nix`
 
-````sh
+```sh
 cd hello_f77
 g++ hello_f77.f -x f77 -std=legacy -O2 -lgfortran -o hello_f77.exe
 ```
