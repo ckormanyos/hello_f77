@@ -1,0 +1,32 @@
+##############################################################################
+#  Copyright Christopher Kormanyos 2023.
+#  Distributed under the Boost Software License,
+#  Version 1.0. (See accompanying file LICENSE_1_0.txt
+#  or copy at http://www.boost.org/LICENSE_1_0.txt)
+
+name: hello_f77
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+jobs:
+  ubuntu-native:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    strategy:
+      fail-fast: false
+      matrix:
+        standard: [ legacy ]
+        compiler: [ g++ ]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: '0'
+      - name: ubuntu-native
+        run: |
+          g++ hello_f77.f -x f77 -std=legacy -O2 -lgfortran -o hello_f77.exe
+          ls -la hello_f77.exe
+          ./hello_f77.exe | grep 'Hello World'
