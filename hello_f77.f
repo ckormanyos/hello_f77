@@ -7,7 +7,7 @@ c     or copy at http://www.boost.org/LICENSE_1_0.txt)
 c
 
 c     g++ hello_f77.f -x f77 -std=legacy -O2 -lgfortran -o hello_f77.exe
-c     See also https://godbolt.org/z/dGxTGv8or
+c     See also https://godbolt.org/z/9j7efoTMG
 
       program hello
       implicit none
