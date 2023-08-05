@@ -8,11 +8,11 @@ hello_f77
         <img src="https://img.shields.io/badge/try%20it%20on-godbolt-green" /></a>
 </p>
 
-hello_f77 implements the epic _Hello_ _World_ program in the Fortran77 language.
+hello_f77 implements the epic _Hello_ _World_ program in `FORTRAN-77`.
 
 ## Compile on `*nix`
 
-Use GCC to compile [`hello_f77.f`](./hello_f77.f) (requires the presence of `fortran`).
+Use GCC to compile [`hello_f77.f`](./hello_f77.f) (requires the presence of `fortran` and `libgfortran`).
 
 ```sh
 cd hello_f77
