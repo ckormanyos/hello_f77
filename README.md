@@ -8,8 +8,7 @@ hello_f77
         <img src="https://img.shields.io/badge/try%20it%20on-godbolt-green" /></a>
 </p>
 
-hello_f77 implements the epic Hello World program in the Fortran77 language.
-
+hello_f77 implements the epic _Hello_ _World_ program in the Fortran77 language.
 ## Build on `*nix`
 
 ````sh
