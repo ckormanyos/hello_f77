@@ -8,7 +8,7 @@ hello_f77
         <img src="https://img.shields.io/badge/try%20it%20on-godbolt-green" /></a>
 </p>
 
-hello_f77 implements the epic _Hello_ _World_ program in `FORTRAN-77`.
+hello_f77 implements the epic _Hello_ _World_ program in `FORTRAN77`.
 
 ## Compile on `*nix`
 
