@@ -51,11 +51,13 @@ c     See also https://godbolt.org/z/dP3Y1EYnr
 
 ## Historical Perspective
 
-From a senior programmer's perspective, `FORTRAN77` was there early in the game.
-From a subjective observer's standpoint it then seemed like its support was lost,
-missing, incomplete or obscure for a while.
+In a historical perspective, `FORTRAN77` was there early in the game.
+From a subjective standpoint, however, it seemed like there was an intermediate
+time epoch during which its support was lost, missing, or in some other
+way incomplete and obscure.
 
-Now trusty old `f77` is back, and it is properly supported as part of GCC on many systems.
-There is also (as there should be) conformance with legacy code,
-including the $128$-bit floating-point data type `REAL*16` (although not used in
-_Hello_ _World_, there for number crunching when neeeded).
+Now trusty old `f77` is back. It is properly supported as part of GCC on many systems.
+There is also (as there should be) conformance with legacy code.
+This includes support for the $128$-bit floating-point data type `REAL*16`
+which, although not used in _Hello_ _World_, is there for number crunching
+when neeeded.
