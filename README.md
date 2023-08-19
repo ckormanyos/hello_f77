@@ -4,7 +4,7 @@ hello_f77
 <p align="center">
     <a href="https://github.com/ckormanyos/hello_f77/actions">
         <img src="https://github.com/ckormanyos/hello_f77/actions/workflows/hello_f77.yml/badge.svg" alt="Build Status"></a>
-    <a href="https://godbolt.org/z/dP3Y1EYnr" alt="godbolt">
+    <a href="https://godbolt.org/z/sMoP43Mcc" alt="godbolt">
         <img src="https://img.shields.io/badge/try%20it%20on-godbolt-green" /></a>
 </p>
 
@@ -27,31 +27,32 @@ The complete source is provided below.
 It can be found in [`hello_f77.f`](./hello_f77.f)
 
 ```fortran
-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-c
-c     Copyright Christopher Kormanyos 1985 - 2023.
-c     Distributed under the Boost Software License,
-c     Version 1.0. (See accompanying file LICENSE_1_0.txt
-c     or copy at http://www.boost.org/LICENSE_1_0.txt)
-c
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+C
+C     Copyright Christopher Kormanyos 1985 - 2023.
+C     Distributed under the Boost Software License,
+C     Version 1.0. (See accompanying file LICENSE_1_0.txt
+C     or copy at http://www.boost.org/LICENSE_1_0.txt)
+C
 
-c     g++ hello_f77.f -x f77 -std=legacy -O2 -lgfortran -o hello_f77.exe
-c     See also https://godbolt.org/z/dP3Y1EYnr
+C     g++ hello_f77.f -x f77 -std=legacy -O2 -lgfortran -o hello_f77.exe
+C     See also https://godbolt.org/z/sMoP43Mcc
 
-      program hello
-      implicit none
+      PROGRAM HELLO
+      IMPLICIT NONE
 
-      character*32 text
+      CHARACTER*32 MY_TEXT
 
-      text = 'Hello World'
-      write (*,*) text
+      MY_TEXT = 'Hello World'
+      WRITE (*,*) MY_TEXT
 
-      end
+      END
 ```
 
 ## Historical Perspective
 
-In a historical perspective, `FORTRAN77` was there early in the game.
+`FORTRAN` (in particular `FORTRAN77` or `f77`) was there early in the game.
+
 From a subjective standpoint, however, it seemed like there was an intermediate
 time epoch during which its support was lost, missing, or in some other
 way incomplete and obscure.
@@ -60,4 +61,5 @@ Now trusty old `f77` is back. It is properly supported as part of GCC on many sy
 There is also (as there should be) conformance with legacy code.
 This includes support for the $128$-bit floating-point data type `REAL*16`
 which, although not used in _Hello_ _World_, is there for number crunching
-when neeeded.
+when neeeded. This makes `FORTRAN` (even today) still a leading program
+for high-precision numerical calculations.
