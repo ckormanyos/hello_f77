@@ -24,7 +24,10 @@ g++ hello_f77.f -x f77 -std=legacy -O2 -lgfortran -o hello_f77.exe
 ## Source Listing
 
 The complete source is provided below.
-It can be found in [`hello_f77.f`](./hello_f77.f)
+It can be found in [`hello_f77.f`](./hello_f77.f).
+
+You can even try this program at the following
+[short link](https://godbolt.org/z/sMoP43Mcc) to [godbolt](https://godbolt.org).
 
 ```fortran
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
@@ -63,7 +66,8 @@ This includes support for the $128$-bit floating-point data type `REAL*16`.
 
 Even though `REAL*16` (and its complex counterpart `COMPLEX*32`)
 are not used in _Hello_ _World_, they are available for number crunching
-when neeeded. These high-precision types can be difficult to find in the world of
+when needed. These high-precision types can be difficult to find in the world of
 high-preformance, efficient, object-code-generating programming languages.
+
 This makes `FORTRAN` _even_ _today_ still a leading program
-for high-precision numerical calculations.
+for high-performance, high-precision numerical calculations.
