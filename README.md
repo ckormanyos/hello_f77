@@ -59,7 +59,11 @@ way incomplete and obscure.
 
 Now trusty old `f77` is back. It is properly supported as part of GCC on many systems.
 There is also (as there should be) conformance with legacy code.
-This includes support for the $128$-bit floating-point data type `REAL*16`
-which, although not used in _Hello_ _World_, is there for number crunching
-when neeeded. This makes `FORTRAN` (even today) still a leading program
+This includes support for the $128$-bit floating-point data type `REAL*16`.
+
+Even though `REAL*16` (and its complex counterpart `COMPLEX*32`)
+are not used in _Hello_ _World_, they are available for number crunching
+when neeeded. These high-precision types can be difficult to find in the world of
+high-preformance, efficient, object-code-generating programming languages.
+This makes `FORTRAN` _even_ _today_ still a leading program
 for high-precision numerical calculations.
