@@ -24,8 +24,8 @@ g++ hello_f77.f -x f77 -std=legacy -O2 -lgfortran -o hello_f77.exe
 ### Query if `fortran` Is Available
 
 If you are unsure if `fortran` is available, query GCC for the presence of `fortran`.
-Use the command shown below and search for `fortran` in the list of GCC's built
-languages.
+Use the command shown below and search for `fortran` in the list of GCC's
+_enabled_ languages.
 
 ```sh
 g++ -v
