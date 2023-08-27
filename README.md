@@ -13,13 +13,26 @@ hello_f77 implements the epic _Hello_ _World_ program in `FORTRAN77`.
 ## Compile on `*nix`
 
 Use GCC to compile [`hello_f77.f`](./hello_f77.f). This requires the presence
-of `fortran` in the enabled languages of the GCC build and an installed `libgfortran`
-on the system.
+of `fortran` in the enabled languages of the GCC build (see image and description below).
+The `libgfortran` library must also be installed on the system for proper linking.
 
 ```sh
 cd hello_f77
 g++ hello_f77.f -x f77 -std=legacy -O2 -lgfortran -o hello_f77.exe
 ```
+
+### Query if `fortran` Is Available
+
+If you are unsure if `fortran` is available, query GCC for the presence of `fortran`.
+Use the command shown below and search for `fortran` in the list of GCC's built
+languages.
+
+```sh
+g++ -v
+```
+
+![](./images/gcc_has_fortran.jpg)
+
 
 ## Source Listing
 
@@ -67,7 +80,7 @@ This includes support for the $128$-bit floating-point data type `REAL*16`.
 Even though `REAL*16` (and its complex counterpart `COMPLEX*32`)
 are not used in _Hello_ _World_, they are available for number crunching
 when needed. These high-precision types can be difficult to find in the world of
-high-preformance, efficient, object-code-generating programming languages.
+high-performance, efficient, object-code-generating programming languages.
 
-This makes `FORTRAN` _even_ _today_ still a leading program
+_Even_ _today_ this makes `FORTRAN77` still a leading program
 for high-performance, high-precision numerical calculations.
