@@ -30,3 +30,30 @@ jobs:
           g++ hello_f77.f -x f77 -std=legacy -O2 -lgfortran -o hello_f77.exe
           ls -la hello_f77.exe
           ./hello_f77.exe | grep 'Hello World'
+  macos-native:
+    runs-on: macos-latest
+    defaults:
+      run:
+        shell: bash
+    strategy:
+      fail-fast: false
+      matrix:
+        compiler: [ g++-13 ]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: '0'
+      - name: update-tools
+        run: brew reinstall gcc
+      - name: brew-installed-gcc-path
+        run: |
+          PATH="/usr/local/Cellar/gcc/13.1.0/bin:$PATH"
+      - name: g++-version
+        run: |
+          echo Query the g++ version
+          ${{ matrix.compiler }} -v
+      - name: macos-native
+        run: |
+          ${{ matrix.compiler }} -x f77 -O2 hello_f77.f -lgfortran -o hello_f77.exe
+          ls -la hello_f77.exe
+          ./hello_f77.exe | grep 'Hello World'
