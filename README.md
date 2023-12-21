@@ -4,6 +4,8 @@ hello_f77
 <p align="center">
     <a href="https://github.com/ckormanyos/hello_f77/actions">
         <img src="https://github.com/ckormanyos/hello_f77/actions/workflows/hello_f77.yml/badge.svg" alt="Build Status"></a>
+    <a href="https://github.com/ckormanyos/hello_f77/blob/master/LICENSE">
+        <img src="https://img.shields.io/badge/license-BSL%201.0-blue.svg" alt="Boost Software License 1.0"></a>
     <a href="https://godbolt.org/z/sMoP43Mcc" alt="godbolt">
         <img src="https://img.shields.io/badge/try%20it%20on-godbolt-green" /></a>
 </p>
